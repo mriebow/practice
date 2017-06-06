@@ -3,8 +3,8 @@ require "rails_helper"
 
 feature "visitor sees a list of houses" do
   scenario "sees a list of houses with no details as links, and a link for new house" do
-    House.create(name: "Stark", author: "George R. R. Martin", source: "A Game of Thrones")
-    House.create(name: "Atreides", author: "Frank Herbert", source: "Dune")
+    House.create(name: "Stark", author: "George R. R. Martin", source: "A Game of Thrones", motto: "Winter is Coming")
+    House.create(name: "Atreides", author: "Frank Herbert", source: "Dune", motto: "So much sand")
 
     visit houses_path
 
