@@ -2,10 +2,18 @@
 
 <ul>
   <li>Author - <%= @house.author %></li>
-  <li>Source Material - <%= @house.source %></li>
+  <li>Book - <%= @house.source %></li>
   <% if @house.motto %>
   <li>Motto -  <%= @house.motto %></li>
   <% end %>
 </ul>
-
+<h3>Members:</h3>
+<%@members.each do |member|%>
+  <%if member.house_id == @house.id%>
+    <ul>
+      <li><%=member.first_name%><li>
+    </ul>
+  <%end%>
+<%end%>
+<%= link_to 'Add Member', new_member_path %><br/>
 <%= link_to 'Back', houses_path %>

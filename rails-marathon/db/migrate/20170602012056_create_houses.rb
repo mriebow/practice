@@ -4,7 +4,7 @@ class CreateHouses < ActiveRecord::Migration[5.0]
       t.string :name, null: false
       t.string :author, null: false
       t.string :source, null: false
-      t.string :motto, null: false
+      t.string :motto
 
       t.timestamps
     end

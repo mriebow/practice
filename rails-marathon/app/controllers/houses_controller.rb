@@ -1,4 +1,8 @@
 class HousesController < ApplicationController
+  def index
+    @houses = House.all
+  end
+
   def new
     @house = House.new
   end
@@ -16,6 +20,7 @@ class HousesController < ApplicationController
 
   def show
     @house = House.find(params[:id])
+    @members = Member.all
   end
 
   private
