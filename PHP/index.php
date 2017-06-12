@@ -10,8 +10,11 @@
 	    </h1>
         <p>
           <?php
-            echo 17 * 123
+            echo 17 * 123;
+            $myName = "Matthew";
+            echo "Name: ".$myName;
           ?>
+
         </p>
 	</body>
 </html>
