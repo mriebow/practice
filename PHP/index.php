@@ -48,5 +48,16 @@
               echo "I don't know how much \$i is.";
       endswitch;
       ?>
+
+			<!-- Arrays -->
+      <?php
+        $languages = array("HTML/CSS",
+        "JavaScript", "PHP", "Python", "Ruby");
+        // Write the code to remove Python here!
+        unset($languages[3]);
+
+        foreach($languages as $lang) {
+          print "<p>$lang</p>";
+        }
 	</body>
 </html>
