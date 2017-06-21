@@ -59,5 +59,17 @@
         foreach($languages as $lang) {
           print "<p>$lang</p>";
         }
+
+		// Loops
+				<?php
+	$yardlines = array("The 50... ", "the 40... ",
+	"the 30... ", "the 20... ", "the 10... ");
+
+	foreach($yardlines as $yardline) {
+			echo $yardline;
+	};
+	echo "touchdown!";
+
+?>
 	</body>
 </html>
