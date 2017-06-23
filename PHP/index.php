@@ -59,7 +59,26 @@
         foreach($languages as $lang) {
           print "<p>$lang</p>";
         }
+				?>
+				<?php
+// Create an array and push on the names
+	// of your closest family and friends
 
+	$family = array();
+			array_push($family, "Ellen");
+			array_push($family, "Me");
+			array_push($family, "Isaac");
+			array_push($family, "Oliver");
+			array_push($family, "Finn");
+// Sort the list
+			sort($family);
+			$num = count($family) - 1;
+// Randomly select a winner!
+			$random = rand(1, $num);
+			$winner = $family[$random];
+// Print the winner's name in ALL CAPS
+print strtoupper($winner);
+?>
 		// Loops
 				<?php
 	$yardlines = array("The 50... ", "the 40... ",
