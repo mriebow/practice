@@ -120,3 +120,23 @@ function aboutMe($name, $age){
 
 		aboutMe("Matthew",31)
 ?>
+
+<!-- OOP -->
+<?php
+	class Cat {
+		public $isAlive = true;
+		public $numLegs = 4;
+
+		public function __constructor($name){
+				$this->name = $name;
+		}
+		}
+
+		function meow(){
+				return "Meow meow";
+		}
+
+		$cat1 = new Cat("CodeCat");
+
+		echo meow($cat1);
+?>
